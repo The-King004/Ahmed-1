@@ -7,7 +7,7 @@
     --base-size: 10px;
     --title-color: #d4fffb;
     --txt-color: #64ccc5;
-    --border: 1px solid var(--txt-color);
+    --border: 1px solid #000000;
     --ff: 'Jacques Francois Shadow', cursive;
     --mg: 100px;
 }
@@ -20,6 +20,7 @@ html{
 }
 
 body{
+    background: var(--bg);
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -30,12 +31,14 @@ body{
 
 header{
     border: var(--border);
+    background: var(--btn);
     height: 71px;
     text-align: center;
     width: 100vw;
 }
 
 h1{
+    color: var(--title-color);
     font-family: var(--ff);
     font-size: 4rem;
     margin-top: 1.8rem;
@@ -46,17 +49,17 @@ h1{
 /* debut de la description */
 
 .description{
-    background: var(--test-bg);
-    border: var(--border);
     height: 400px;
     margin-top: var(--mg);
     margin-left: 25%;
     width: 50vw;
     display: flex;
     padding: 30px;
+    color: var(--txt-color);
 }
 
 .description__image img{
+    border-radius: 50px;
     width: 400px;
 }
 
@@ -70,9 +73,11 @@ h1{
 .description__text h2{
     font-size: 3rem;
     font-family: var(--ff);
+    color: var(--txt-color);
 }
 
 .description__text p{
+    color: var(--title-color);
     font-size: 2.5rem;
     margin-left: 60px;
     margin-top: -20px;
@@ -83,6 +88,7 @@ h1{
 /* debut du titre_1 */
 
 .titre_1{
+    background: var(--btn);
     border: var(--border);
     border-radius: 10px;
     height: 60px;
@@ -103,9 +109,80 @@ h1{
 /* debut du plan */
 
 .plan{
-    border: var(--border);
-    height: 600px;
+    background: var(--btn);
+    border-radius: 20px;
+    display: flex;
+    height: 550px;
     margin-left: 10%;
     margin-top: var(--mg);
+    padding: 10px;
     width: 80vw;
+    color: var(--title-color);
+}
+
+.box{
+    width: 49%;
+}
+
+.plan__vertical_ligne{
+    width: 2%;
+}
+
+.plan__vertical_ligne__one{
+    background: #000;
+    height: 96%;
+    margin-top:40%;
+    margin-left: 50%;
+    width: 1px;   
+}
+
+.la_1{
+    height: 38%;
+}
+
+.la_1 img{
+    margin-left: 10px;
+}
+
+.la_1 h2{
+    color: #000;
+    font-size: 3rem;
+    margin-left: 45px;
+    margin-top: -34px;
+}
+
+.la_1 p{
+    font-size: 2rem;
+    margin-left: 45px;
+}
+
+.la{
+    height: 60%;
+}
+
+.la img{
+    margin-left: 10px;
+}
+
+.la h2{
+    color: #000;
+    font-size: 3rem;
+    margin-left: 45px;
+    margin-top: -34px;
+}
+
+.la p{
+    font-size: 2rem;
+    margin-left: 45px;
+}
+
+.ligne{
+    height: 2%;
+}
+
+hr{
+    background: #000;
+    height: 1px;
+    margin-left: 2%;
+    width: 96%;
 }
