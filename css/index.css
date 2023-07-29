@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap');
+
+:root{
+    --test-bg: red;
+    --bg: #001c30;
+    --btn: #176b87;
+    --base-size: 10px;
+    --title-color: #d4fffb;
+    --txt-color: #64ccc5;
+    --border: 1px solid var(--txt-color);
+    --ff: 'Jacques Francois Shadow', cursive;
+    --mg: 100px;
+}
+
+html{
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-size: var(--base-size);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    border: none;
+}
+
+/* debut du header */
+
+header{
+    border: var(--border);
+    height: 71px;
+    text-align: center;
+    width: 100vw;
+}
+
+h1{
+    font-family: var(--ff);
+    font-size: 4rem;
+    margin-top: 1.8rem;
+}
+
+/* fin du header */
+
+/* debut de la description */
+
+.description{
+    background: var(--test-bg);
+    border: var(--border);
+    height: 400px;
+    margin-top: var(--mg);
+    margin-left: 25%;
+    width: 50vw;
+    display: flex;
+    padding: 30px;
+}
+
+.description__image img{
+    width: 400px;
+}
+
+.description__text{
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    margin-top: 130px;
+}
+
+.description__text h2{
+    font-size: 3rem;
+    font-family: var(--ff);
+}
+
+.description__text p{
+    font-size: 2.5rem;
+    margin-left: 60px;
+    margin-top: -20px;
+}
+
+/* fin de la description */
+
+/* debut du titre_1 */
+
+.titre_1{
+    border: var(--border);
+    border-radius: 10px;
+    height: 60px;
+    margin-top: var(--mg);
+    margin-left: 700px;
+    text-align: center;
+    width: 300px;
+    
+}
+
+.titre_1 h2{
+    font-size: 3rem;
+    margin-top: 10px;
+}
+
+/* fin du titre_1 */
+
+/* debut du plan */
+
+.plan{
+    border: var(--border);
+    height: 600px;
+    margin-left: 10%;
+    margin-top: var(--mg);
+    width: 80vw;
+}
