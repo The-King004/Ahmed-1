@@ -9,7 +9,7 @@
     --txt-color: #64ccc5;
     --border: 1px solid #000000;
     --ff: 'Jacques Francois Shadow', cursive;
-    --mg: 100px;
+    --mg: 50px;
 }
 
 html{
@@ -51,10 +51,10 @@ h1{
 .description{
     height: 400px;
     margin-top: var(--mg);
-    margin-left: 25%;
+    margin-left: 380px;
     width: 50vw;
     display: flex;
-    padding: 30px;
+    padding: 10px;
     color: var(--txt-color);
 }
 
@@ -93,7 +93,7 @@ h1{
     border-radius: 10px;
     height: 60px;
     margin-top: var(--mg);
-    margin-left: 700px;
+    margin-left: 660px;
     text-align: center;
     width: 300px;
     
@@ -113,10 +113,10 @@ h1{
     border-radius: 20px;
     display: flex;
     height: 550px;
-    margin-left: 10%;
+    margin-left: 65px;
     margin-top: var(--mg);
     padding: 10px;
-    width: 80vw;
+    width: 90vw;
     color: var(--title-color);
 }
 
@@ -185,4 +185,203 @@ hr{
     height: 1px;
     margin-left: 2%;
     width: 96%;
+    
+}
+
+/* fin du plan */
+
+@media only screen and (max-width:1360px) {
+    /* debut description */
+    .description{
+        margin-left: 310px;
+        width: 50vw;
+        height: 41vh;
+    }
+
+    .description__image img{
+        border-radius: 50%;
+        width: 250px;
+    }
+    .description__text{
+        justify-content: center;
+        align-items: center;
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+
+    .description__text h2{
+        font-size: 3rem;
+        font-family: var(--ff);
+        color: var(--txt-color);
+    }
+
+    .description__text p{
+        color: var(--title-color);
+        font-size: 2.5rem;
+        margin-left: 40px;
+    }
+    /* fin description */
+
+    /* debut titre */
+    .titre_1{
+        background: var(--btn);
+        margin-left: 500px;
+        width: 250px;
+    }
+
+    .titre_1 h2{
+        font-size: 3rem;
+        margin-top: 10px;
+    }
+
+    .plan{
+        height: 600px;
+        margin-left: 60px;
+    }
+
+    .solo{
+        display: none;
+    }
+}
+
+@media only screen and (max-width:1230px){
+    .description{
+        width: 50vw;
+        margin-left: 250px;
+        height: 28vh;
+    }
+
+    .titre_1{
+        margin-left: 450px;
+    }
+
+    .plan{
+        margin-left: 40px;
+        height: 650px;
+    }
+
+    .solo{
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width:1156px){
+    .description{
+        margin-left: 200px;
+        width: 52vw;
+        height: 28vh;
+    }
+
+    .titre_1{
+        margin-left: 420px;
+    }
+
+    .plan{
+        margin-left: 50px;
+        height: 650px;
+    }
+
+    .solo{
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width:1112px){
+    .description{
+        width: 56vw;
+        margin-left: 180px;
+        height: 28vh;
+    }
+
+    .titre_1{
+        margin-left: 370px;
+    }
+
+    .plan{
+        margin-left: 45px;
+        height: 700px;
+    }
+
+    .solo{
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width:1026px){
+    .description{
+        width: 67vw;
+        margin-left: 140px;
+        height: 28vh;
+    }
+
+    .titre_1{
+        margin-left: 320px;
+    }
+
+    .plan{
+        margin-left: 35px;
+        height: 810px;
+    }
+
+    .solo{
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width:860px){
+    .description{
+        width: 75vw;
+        margin-left: 80px;
+        height: 28vh;
+    }
+
+    .titre_1{
+        margin-left: 250px;
+    }
+
+    .plan{
+        margin-left: 22px;
+        height: 920px;
+    }
+
+    .solo{
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width:776px){
+    .description{
+        width: 90vw;
+        margin-left: 27px;
+        height: 30vh;
+    }
+
+    .titre_1{
+        margin-left: 200px;
+    }
+
+    .plan{
+        margin-left: 27px;
+        height: 1150px;
+        flex-direction: column;
+    }
+
+    .plan__vertical_ligne{
+        display: none;
+    }
+
+    .solo{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    .box{
+        width: 100%;
+    }
+
 }
