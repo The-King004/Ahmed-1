@@ -17,6 +17,7 @@ html{
     padding: 0;
     border: none;
     font-size: var(--base-size);
+    overflow-x: hidden;
 }
 
 body{
@@ -25,6 +26,7 @@ body{
     padding: 0;
     overflow-x: hidden;
     border: none;
+    width: 100vw;
 }
 
 /* debut du header */
@@ -49,25 +51,25 @@ h1{
 /* debut de la description */
 
 .description{
-    height: 400px;
+    height: 35rem;
     margin-top: var(--mg);
-    margin-left: 380px;
-    width: 50vw;
+    margin-left: 20rem;
+    width: 65vw;
     display: flex;
-    padding: 10px;
+    padding: 1rem;
     color: var(--txt-color);
 }
 
 .description__image img{
-    border-radius: 50px;
-    width: 400px;
+    border-radius: 50rem;
+    width: 35rem;
 }
 
 .description__text{
     justify-content: center;
     align-items: center;
-    margin-left: 50px;
-    margin-top: 130px;
+    margin-left: 5rem;
+    margin-top: 12rem;
 }
 
 .description__text h2{
@@ -79,8 +81,8 @@ h1{
 .description__text p{
     color: var(--title-color);
     font-size: 2.5rem;
-    margin-left: 60px;
-    margin-top: -20px;
+    margin-left: 6rem;
+    margin-top: -2rem;
 }
 
 /* fin de la description */
@@ -90,18 +92,18 @@ h1{
 .titre_1{
     background: var(--btn);
     border: var(--border);
-    border-radius: 10px;
-    height: 60px;
+    border-radius: 1rem;
+    height: 6rem;
     margin-top: var(--mg);
-    margin-left: 660px;
+    margin-left: 48rem;
     text-align: center;
-    width: 300px;
+    width: 30rem;
     
 }
 
 .titre_1 h2{
     font-size: 3rem;
-    margin-top: 10px;
+    margin-top: 1rem;
 }
 
 /* fin du titre_1 */
@@ -110,12 +112,12 @@ h1{
 
 .plan{
     background: var(--btn);
-    border-radius: 20px;
+    border-radius: 2rem;
     display: flex;
-    height: 550px;
-    margin-left: 65px;
+    height: 55rem;
+    margin-left: 4.5rem;
     margin-top: var(--mg);
-    padding: 10px;
+    padding: 1rem;
     width: 90vw;
     color: var(--title-color);
 }
@@ -133,7 +135,7 @@ h1{
     height: 96%;
     margin-top:40%;
     margin-left: 50%;
-    width: 1px;   
+    width: 0.1rem;   
 }
 
 .la_1{
@@ -147,13 +149,13 @@ h1{
 .la_1 h2{
     color: #000;
     font-size: 3rem;
-    margin-left: 45px;
-    margin-top: -34px;
+    margin-left: 4.5rem;
+    margin-top: -3.4rem;
 }
 
 .la_1 p{
     font-size: 2rem;
-    margin-left: 45px;
+    margin-left: 4.5rem;
 }
 
 .la{
@@ -161,19 +163,19 @@ h1{
 }
 
 .la img{
-    margin-left: 10px;
+    margin-left: 1rem;
 }
 
 .la h2{
     color: #000;
     font-size: 3rem;
-    margin-left: 45px;
-    margin-top: -34px;
+    margin-left: 4.5rem;
+    margin-top: -3.4rem;
 }
 
 .la p{
     font-size: 2rem;
-    margin-left: 45px;
+    margin-left: 4.5rem;
 }
 
 .ligne{
@@ -182,206 +184,409 @@ h1{
 
 hr{
     background: #000;
-    height: 1px;
+    height: 0.1rem;
     margin-left: 2%;
     width: 96%;
     
 }
 
+.solo{
+    display: none;
+}
+
 /* fin du plan */
 
-@media only screen and (max-width:1360px) {
-    /* debut description */
+
+@media only screen and (max-width:400px) {
+    header{
+        height: 4rem;
+    }
+
+    h1{
+        font-size: 2rem;
+        margin-top: 1.1rem;
+    }
+
     .description{
-        margin-left: 310px;
-        width: 50vw;
-        height: 41vh;
+        flex-direction: column;
+        margin-left: 1.9rem;
+        margin-top: 1rem;
+        height: 45vh;
+        width: 85vw;
     }
 
     .description__image img{
-        border-radius: 50%;
-        width: 250px;
+        width: 30rem;
+        margin-left: 2rem;
     }
+
     .description__text{
-        justify-content: center;
-        align-items: center;
-        margin-left: 30px;
-        margin-top: 30px;
+        margin-left: 1.5rem;
+        margin-top: 0rem;
     }
 
     .description__text h2{
-        font-size: 3rem;
-        font-family: var(--ff);
-        color: var(--txt-color);
+        font-size: 2.5rem;
     }
 
     .description__text p{
-        color: var(--title-color);
-        font-size: 2.5rem;
-        margin-left: 40px;
+        font-size: 2.3rem;
+        margin-left: 3rem;
     }
-    /* fin description */
 
-    /* debut titre */
     .titre_1{
-        background: var(--btn);
-        margin-left: 500px;
-        width: 250px;
+        width: 50vw;
+        height: 5rem;
+        margin-left: 9rem;
+        margin-top: 3rem;
     }
 
     .titre_1 h2{
+        margin-top: 0.6rem;
         font-size: 3rem;
-        margin-top: 10px;
     }
 
     .plan{
-        height: 600px;
-        margin-left: 60px;
-    }
-
-    .solo{
-        display: none;
-    }
-}
-
-@media only screen and (max-width:1230px){
-    .description{
-        width: 50vw;
-        margin-left: 250px;
-        height: 28vh;
-    }
-
-    .titre_1{
-        margin-left: 450px;
-    }
-
-    .plan{
-        margin-left: 40px;
-        height: 650px;
-    }
-
-    .solo{
-        display: none;
-    }
-
-}
-
-@media only screen and (max-width:1156px){
-    .description{
-        margin-left: 200px;
-        width: 52vw;
-        height: 28vh;
-    }
-
-    .titre_1{
-        margin-left: 420px;
-    }
-
-    .plan{
-        margin-left: 50px;
-        height: 650px;
-    }
-
-    .solo{
-        display: none;
-    }
-
-}
-
-@media only screen and (max-width:1112px){
-    .description{
-        width: 56vw;
-        margin-left: 180px;
-        height: 28vh;
-    }
-
-    .titre_1{
-        margin-left: 370px;
-    }
-
-    .plan{
-        margin-left: 45px;
-        height: 700px;
-    }
-
-    .solo{
-        display: none;
-    }
-
-}
-
-@media only screen and (max-width:1026px){
-    .description{
-        width: 67vw;
-        margin-left: 140px;
-        height: 28vh;
-    }
-
-    .titre_1{
-        margin-left: 320px;
-    }
-
-    .plan{
-        margin-left: 35px;
-        height: 810px;
-    }
-
-    .solo{
-        display: none;
-    }
-
-}
-
-@media only screen and (max-width:860px){
-    .description{
-        width: 75vw;
-        margin-left: 80px;
-        height: 28vh;
-    }
-
-    .titre_1{
-        margin-left: 250px;
-    }
-
-    .plan{
-        margin-left: 22px;
-        height: 920px;
-    }
-
-    .solo{
-        display: none;
-    }
-
-}
-
-@media only screen and (max-width:776px){
-    .description{
-        width: 90vw;
-        margin-left: 27px;
-        height: 30vh;
-    }
-
-    .titre_1{
-        margin-left: 200px;
-    }
-
-    .plan{
-        margin-left: 27px;
-        height: 1150px;
         flex-direction: column;
+        margin-left: .9rem;
+        margin-top: 3rem;
+        height: 155rem;
+        width: 90vw;
+        padding: none;
     }
 
-    .plan__vertical_ligne{
-        display: none;
+    .plan_1{
+        width: 98%;
+        margin-left: -1rem;
+    }
+    
+    .plan_2{
+        width: 98%;
+        margin-left: -1rem;
+    }
+
+    .la{
+        width: 100%;
+        margin-bottom: -6rem;
+    }
+     
+    .la_1{
+        width: 100%;
+    }
+
+    .text p{
+        font-size: 2rem;
+        margin-left: 1.5rem;
+        width: 100%;
     }
 
     .solo{
         display: block;
-        margin-bottom: 30px;
+        margin-bottom: 12rem;
+    }
+}
+
+/* iphone XR */
+@media only screen and (max-width:600px) {
+    header{
+        height: 4rem;
     }
 
-    .box{
+    h1{
+        font-size: 2.5rem;
+        margin-top: 0.6rem;
+    }
+
+    .description{
+        flex-direction: column;
+        margin-left: 1.9rem;
+        margin-top: 1rem;
+        height: 45vh;
+        width: 85vw;
+    }
+
+    .description__image img{
+        width: 30rem;
+        margin-left: 2rem;
+    }
+
+    .description__text{
+        margin-left: 1.5rem;
+        margin-top: 0rem;
+    }
+
+    .description__text h2{
+        font-size: 2.5rem;
+    }
+
+    .description__text p{
+        font-size: 2.3rem;
+        margin-left: 3rem;
+    }
+
+    .titre_1{
+        width: 50vw;
+        height: 5rem;
+        margin-left: 9rem;
+        margin-top: 3rem;
+    }
+
+    .titre_1 h2{
+        margin-top: 0.6rem;
+        font-size: 3rem;
+    }
+
+    .plan{
+        flex-direction: column;
+        margin-left: .9rem;
+        margin-top: 3rem;
+        height: 155rem;
+        width: 90vw;
+        padding: none;
+    }
+
+    .plan_1{
+        width: 98%;
+        margin-left: -1rem;
+    }
+    
+    .plan_2{
+        width: 98%;
+        margin-left: -1rem;
+    }
+
+    .la{
+        width: 100%;
+        margin-bottom: -6rem;
+    }
+     
+    .la_1{
         width: 100%;
     }
 
+    .text p{
+        font-size: 2rem;
+        margin-left: 1.5rem;
+        width: 100%;
+    }
+
+    .solo{
+        display: block;
+        margin-bottom: 12rem;
+    }
+    
+}
+
+@media only screen and (max-width:1221px) {
+    .description{
+        background: var(--test-bg);
+    }
+    .plan{
+        height: 60rem;
+    }
+}
+
+@media only screen and (max-width:1193px) {
+    .description{
+        margin-left: 18rem;
+        width: 68vw;
+    }
+}
+
+@media only screen and (max-width:1153px) {
+    .description{
+        margin-left: 16rem;
+        width: 70vw;
+    }
+    .titre_1{
+        margin-left: 40rem;
+    }
+
+    .plan{
+        height: 64rem;
+    }
+}
+
+@media only screen and (max-width:1109px) {
+    .description{
+        background: var(--test-bg);
+        margin-left: 14rem;
+        width: 74vw;
+    }
+    .plan{
+        height: 72rem;
+    }
+}
+
+@media only screen and (max-width:1048px) {
+    .description{
+        margin-left: 10rem;
+        width: 78vw;
+    }
+
+    .titre_1{
+        margin-left: 36rem;
+    }
+    .plan{
+        height: 76rem;
+    }
+}
+
+@media only screen and (max-width:994px) {
+    .description{
+        margin-left: 8rem;
+        width: 80vw;
+    }
+    .plan{
+        height: 78rem;
+    }
+}
+
+@media only screen and (max-width:969px) {
+    .description{
+        margin-left: 6rem;
+        width: 84vw;
+    }
+
+    .titre_1{
+        margin-left: 32rem;
+    }
+    .plan{
+        margin-left: 4rem;
+        height: 84rem;
+    }
+}
+
+@media only screen and (max-width:923px) {
+    .description{
+        width: 88vw;
+    }
+    .plan{
+        margin-left: 3rem;
+    }
+}
+
+@media only screen and (max-width:881px) {
+    .description{
+        height: 25rem;
+    }
+
+    .description__image img{
+        width: 25rem;
+    }
+
+    .description__text{
+        margin-top: 6rem;
+    }
+
+    .description__text h2{
+        font-size: 3rem;
+    }
+
+    .titre_1{
+        margin-left: 28rem;
+    }
+    .plan{
+        height: 96rem;
+    }
+}
+
+@media only screen and (max-width:767px) {
+    .description{
+        background: var(--test-bg);
+        margin-left: 4rem;
+    }
+
+    .titre_1{
+        margin-left: 23rem;
+    }
+
+    .description__text{
+        margin-left: 2rem;
+    }
+
+
+    .plan{
+        height: 100rem;
+    }
+}
+
+@media only screen and (max-width:733px) {
+    header{
+        height: 6rem;
+    }
+
+    h1{
+        font-size: 3rem;
+        margin-top: 2rem;
+    }
+
+    .description{
+        background: var(--test-bg);
+        margin-left: 3rem;
+        width: 90vw;
+    }
+
+    .titre_1{
+        margin-left: 23rem;
+    }
+
+    .description__text{
+        margin-left: 1rem;
+    }
+
+    .plan{
+        height: 110rem;
+    }
+}
+
+@media only screen and (max-width:707px) {
+    .description{
+        background: var(--test-bg);
+        margin-left: 2rem;
+    }
+
+    .titre_1{
+        margin-left: 20rem;
+    }
+
+    .description__text{
+        margin-left: 2rem;
+    }
+
+    .description__text h2{
+        font-size: 2.5rem;
+    }
+
+    .description__text p{
+        font-size: 2.2rem;
+    }
+
+
+    .plan{
+        height: 115rem;
+    }
+}
+
+@media only screen and (max-width:647px) {
+    body{
+        overflow-x: hidden;
+    }
+    .description{
+        background: var(--test-bg);
+        margin-left: 2rem;
+    }
+
+    .titre_1{
+        margin-left: 20rem;
+    }
+
+    .description__text{
+        margin-left: 2rem;
+    }
+
+
+    .plan{
+        height: 120rem;
+    }
 }
