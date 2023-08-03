@@ -57,7 +57,6 @@ h1{
     width: 65vw;
     display: flex;
     padding: 1rem;
-    color: var(--txt-color);
 }
 
 .description__image img{
@@ -75,11 +74,11 @@ h1{
 .description__text h2{
     font-size: 3rem;
     font-family: var(--ff);
-    color: var(--txt-color);
+    color: var(--title-color);
 }
 
 .description__text p{
-    color: var(--title-color);
+    color: var(--txt-color);
     font-size: 2.5rem;
     margin-left: 6rem;
     margin-top: -2rem;
@@ -196,97 +195,6 @@ hr{
 
 /* fin du plan */
 
-
-@media only screen and (max-width:400px) {
-    header{
-        height: 4rem;
-    }
-
-    h1{
-        font-size: 2rem;
-        margin-top: 1.1rem;
-    }
-
-    .description{
-        flex-direction: column;
-        margin-left: 1.9rem;
-        margin-top: 1rem;
-        height: 45vh;
-        width: 85vw;
-    }
-
-    .description__image img{
-        width: 30rem;
-        margin-left: 2rem;
-    }
-
-    .description__text{
-        margin-left: 1.5rem;
-        margin-top: 0rem;
-    }
-
-    .description__text h2{
-        font-size: 2.5rem;
-    }
-
-    .description__text p{
-        font-size: 2.3rem;
-        margin-left: 3rem;
-    }
-
-    .titre_1{
-        width: 50vw;
-        height: 5rem;
-        margin-left: 9rem;
-        margin-top: 3rem;
-    }
-
-    .titre_1 h2{
-        margin-top: 0.6rem;
-        font-size: 3rem;
-    }
-
-    .plan{
-        flex-direction: column;
-        margin-left: .9rem;
-        margin-top: 3rem;
-        height: 155rem;
-        width: 90vw;
-        padding: none;
-    }
-
-    .plan_1{
-        width: 98%;
-        margin-left: -1rem;
-    }
-    
-    .plan_2{
-        width: 98%;
-        margin-left: -1rem;
-    }
-
-    .la{
-        width: 100%;
-        margin-bottom: -6rem;
-    }
-     
-    .la_1{
-        width: 100%;
-    }
-
-    .text p{
-        font-size: 2rem;
-        margin-left: 1.5rem;
-        width: 100%;
-    }
-
-    .solo{
-        display: block;
-        margin-bottom: 12rem;
-    }
-}
-
-/* iphone XR */
 @media only screen and (max-width:600px) {
     header{
         height: 4rem;
@@ -378,9 +286,6 @@ hr{
 }
 
 @media only screen and (max-width:1221px) {
-    .description{
-        background: var(--test-bg);
-    }
     .plan{
         height: 60rem;
     }
@@ -409,7 +314,6 @@ hr{
 
 @media only screen and (max-width:1109px) {
     .description{
-        background: var(--test-bg);
         margin-left: 14rem;
         width: 74vw;
     }
@@ -493,7 +397,6 @@ hr{
 
 @media only screen and (max-width:767px) {
     .description{
-        background: var(--test-bg);
         margin-left: 4rem;
     }
 
@@ -522,7 +425,6 @@ hr{
     }
 
     .description{
-        background: var(--test-bg);
         margin-left: 3rem;
         width: 90vw;
     }
@@ -542,7 +444,6 @@ hr{
 
 @media only screen and (max-width:707px) {
     .description{
-        background: var(--test-bg);
         margin-left: 2rem;
     }
 
@@ -569,12 +470,24 @@ hr{
 }
 
 @media only screen and (max-width:647px) {
-    body{
-        overflow-x: hidden;
-    }
     .description{
-        background: var(--test-bg);
-        margin-left: 2rem;
+        flex-direction: column;
+        margin-left: 7rem;
+        height: 46rem;
+        width: 50rem;
+    }
+
+    .description__image img{
+        margin-left: 8rem;
+        width: 35rem;
+    }
+
+    .description__text h2{
+        font-size: 3rem;
+    }
+
+    .description__text p{
+        font-size: 2.5rem;
     }
 
     .titre_1{
@@ -582,11 +495,561 @@ hr{
     }
 
     .description__text{
-        margin-left: 2rem;
+        margin-left: 6rem;
+        margin-top: -1rem;
     }
 
 
     .plan{
         height: 120rem;
+    }
+}
+
+@media only screen and (max-width:609px){
+    .description{
+        width: 75vw;
+    }
+
+    .description__image img{
+        margin-left: 5rem;
+    }
+
+    .description__text{
+        margin-left: 3rem;
+    }
+
+    .titre_1{
+        margin-left: 16rem;
+    }
+
+    .plan{
+        height: 130rem;
+        margin-left: 2rem;
+    }
+}
+
+@media only screen and (max-width:540px){
+    .description{
+        margin-left: 6rem;
+    }
+
+    .description__image img{
+        margin-left: 3rem;
+    }
+
+    .description__text {
+        margin-left: 1rem;
+    }
+
+    .description__text p{
+        margin-left: 6rem;
+    }
+
+    .titre_1{
+        margin-left: 13rem;
+    }
+}
+
+@media only screen and (max-width:514px){
+    .description{
+        height: 43rem;
+    }
+    .description__image img{
+        margin-left: 1.5rem;
+    }
+
+    .description__text h2{
+        font-size: 2.5rem;
+        margin-left: 2rem;
+    }
+
+    .description__text p{
+        margin-left: 5rem;
+    }
+}
+
+@media only screen and (max-width:484px){
+    .description{
+        margin-left: 5rem;
+    }
+    .description__image img{
+        margin-left: .8rem;
+    }
+    .plan{
+        height: 140rem;
+    }
+}
+
+@media only screen and (max-width:459px){
+    .description__image img{
+        margin-left: -.4rem;
+    }
+
+    .description__text{
+        margin-left: 0rem;
+    }
+
+    .plan{
+        height: 140rem;
+        margin-left: 1rem;
+    }
+}
+
+@media only screen and (max-width:444px){
+    header{
+        height: 5rem;
+    }
+    h1{
+        font-size: 2.5rem;
+        margin-top: 1.5rem;
+    }
+    .description{
+        height: 38rem;
+    }
+
+    .description__image img{
+        width: 30rem;
+        margin-left: 1rem;
+    }
+
+    .description__text{
+        margin-left: -1rem;
+    }
+    .description__text h2{
+        font-size: 2.4rem;
+    }
+
+    .titre_1{
+        margin-left: 11rem;
+    }
+
+    .plan{
+        height: 145rem;
+    }
+}
+
+@media only screen and (max-width:413px){
+    .description{
+        margin-left: 4rem;
+        height: 36rem;
+    }
+
+    .description__image img{
+        margin-left: .1rem;
+    }
+
+    .description__text{
+        margin-left: -2rem;
+    }
+
+    .description__text h2{
+        font-size: 2.3rem;
+    }
+
+    .description__text p{
+        font-size: 2.2rem;
+        margin-left: 5rem;
+    }
+
+    .titre_1{
+        margin-left: 10rem;     
+    }
+
+    .plan{
+        height: 150rem;
+    }
+}
+
+@media only screen and (max-width:384px){
+    .description{
+        margin-left: 3.5rem;
+    }
+
+    .description__image img{
+        width: 28rem;
+    }
+
+    .description__text{
+        margin-left: -3rem;
+    }
+
+    .plan{
+        height: 165rem;
+    }
+}
+
+@media only screen and (max-width:370px){
+    .description__image img{
+        margin-left: -.3rem;
+    }
+
+    .description__text{
+        margin-left: -1.5rem;
+    }
+    .description__text h2{
+        font-size: 2rem;
+    }
+
+    .description__text p{
+        font-size: 2rem;
+        margin-left: 4rem;
+    }
+
+    .titre_1{
+        margin-left: 9rem;
+    }
+
+    .plan{
+        height: 170rem;
+    }
+}
+
+@media only screen and (max-width:341px){
+    .description{
+        height: 30rem;
+    }
+    .description__image img{
+        width: 25rem;
+    }
+
+    .description__text{
+        margin-left: -2.5rem;
+    }
+
+    .plan{
+        margin-left: .5rem;
+        height: 180rem;
+    }
+}
+
+@media only screen and (max-width:327px){
+    h1{
+        font-size: 2rem;
+        margin-top: 2.2rem;
+    }
+    .description__text h2{
+        font-size: 1.8rem;
+    }
+
+    .description__text p{
+        font-size: 1.8rem;
+    }
+
+    .titre_1{
+        margin-left: 8rem;
+    }
+
+    .plan{
+        height: 149rem;
+    }
+
+    .plan p{
+        font-size: 1.7rem;
+    }
+}
+
+@media only screen and (max-width:302px){
+    .description__image img{
+        margin-left: -1rem;
+    }
+    .description{
+        margin-left: 2.5rem;
+    }
+    .plan{
+        height: 125rem;
+    }
+    .plan p{
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width:294px){
+    header{
+        height: 3.5rem;
+    }
+
+    h1{
+        font-size: 1.8rem;
+        margin-top: 1rem;
+    }
+
+    .description{
+        height: 24rem;
+    }
+    .description__image img{
+        margin-left: 1rem;
+        width: 20rem;
+    }
+
+    .description__text{
+        margin-left: -1.5rem;
+    }
+    .description__text h2{
+        font-size: 1.6rem;
+    }
+
+    .description__text p{
+        margin-top: -1.4rem;
+        font-size: 1.6rem;
+        margin-left: 3rem;
+    }
+
+    .titre_1{
+        height: 4rem;
+        margin-left: 7rem;
+    }
+
+    .titre_1 h2{
+        color: var(--txt-color);
+        margin-top: .4rem;
+        font-size: 2.5rem;
+    }
+
+    .plan h2{
+        color: var(--txt-color);
+        font-size: 2.5rem;
+    }
+}
+
+@media only screen and (max-width:274px){
+    .description__image img{
+        margin-left: 0.1rem;
+    }
+
+    .description__text{
+        margin-left: -2rem;
+    }
+
+    .plan{
+        height: 132rem;
+    }
+}
+
+@media only screen and (max-width:267px){
+    .description{
+        margin-left: 2rem;
+    }
+
+    .description__image img{
+        margin-left: -.5rem;
+    }
+
+    .description__text{
+        margin-left: -3rem;
+    }
+
+}
+
+@media only screen and (max-width:267px){
+    .description__text{
+        margin-left: -2rem;
+    }
+
+    .description__text h2{
+        font-size: 1.4rem;
+    }
+
+    .description__text p{
+        font-size: 1.4rem;
+    }
+
+    .titre_1{
+        margin-left: 6rem;
+    }
+
+    .plan{
+        height: 142rem;
+        margin-left: 0;
+        margin-left: 0.3rem;
+    }
+
+}
+
+@media only screen and (max-width:234px){
+    h1{
+        margin-top: 1.7rem;
+        font-size: 1.3rem;
+    }
+    .description__image img{
+        width: 18rem;
+    }
+    .description__text h2{
+        font-size: 1.3rem;
+    }
+
+    .titre_1 h2{
+        margin-top: .8rem;
+        font-size: 2rem;
+    }
+    
+    .plan{
+        height: 164rem;
+    }
+}
+
+@media only screen and (max-width:200px){
+    .description{
+        height: 17rem;
+        margin-left: 1.5rem;
+    }
+
+    .description__image img{
+        width: 15rem;
+    }
+
+    .description__text{
+        margin-left: -1rem;
+    }
+    .description__text h2{
+        font-size: 1.2rem;
+        margin-left: 1.4rem;
+    }
+
+    .description__text p{
+        font-size: 1.2rem;
+        margin-left: 2rem;
+    }
+
+    .titre_1{
+        margin-top: 2rem;
+        margin-left: 5rem;
+    }
+
+    .plan{
+        height: 172rem;
+    }
+}
+
+@media only screen and (max-width:191px){
+    header{
+        height: 2.5rem;
+    }
+
+    h1{
+        margin-top: .7rem;
+    }
+
+    .description{
+        background: red;
+        height: 15rem;
+    }
+
+    .description__image img{
+        margin-left: .2rem;
+        width: 13rem;
+    }
+
+    .description__text h2{
+        margin-left: .3rem;
+    }
+
+    .description__text p{
+        margin-left: 0.9rem;
+    }
+
+    .titre_1{
+        margin-left: 4rem;
+        height: 3rem;
+    }
+
+    .titre_1 h2{
+        font-size: 1.8rem;
+        margin-top: 0.4rem;
+    }
+    .plan img{
+        width: 2rem;
+    }
+
+    .plan h2{
+        font-size: 2rem;
+        margin-left: 3.3rem;
+        margin-top: -24px;
+    }
+}
+
+@media only screen and (max-width:176px){
+    .description{
+        width: 15rem;
+    }
+
+    .description__image img{
+        width: 12rem;
+    }
+}
+
+@media only screen and (max-width:60px){
+    header{
+        height: 1.2rem;
+    }
+
+    h1{
+        font-size: .3rem;
+    }
+
+    .description{
+        margin-left: 0;
+        height: 2.2rem;
+        width: 100%;
+        margin-top: .2rem;
+    }
+
+    .description__image img{
+        margin-top: -.8rem;
+        width: 3rem;
+    }
+
+    .description__text{
+        margin-left: -.8rem;
+    }
+
+    .description__text h2{
+        font-size: 0.3rem;
+        margin-left: 0.7rem;
+        margin-top: 0.9rem;
+    }
+
+    .description__text p{
+        font-size: 0.3rem;
+        margin-top: -.2rem;
+    }
+
+    .titre_1{
+        border-radius: .40rem;
+        width: 3.5rem;
+        height: 1rem;
+        margin-left: .8rem;
+        margin-top: .4rem;
+    }
+
+    .titre_1 h2{
+        font-size: .6rem;
+        margin-top: 0.2rem;
+    }
+
+    .plan{
+        margin-top: 1rem;
+        border-radius: 0;
+        margin-left: 0;
+        height: 117rem;
+        width: 100%;
+    }
+
+    .plan img{
+        position: absolute;
+        margin-top: 1.rem;
+        margin-left: .2rem;
+        width: .8rem;
+    }
+
+    .plan h2{
+        font-size: .7rem;
+        margin-left: 1.1rem;
+        margin-top: -.8rem;
+    }
+
+    .plan p{
+        font-size: 0.7rem;
+        margin-left: 0;
+        width: 100%;
     }
 }
